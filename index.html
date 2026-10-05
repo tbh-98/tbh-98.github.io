@@ -1,0 +1,408 @@
+ho<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bohan Tang - Senior Research Scientist & Academic Homepage</title>
+    <meta name="description" content="Academic homepage of Bohan Tang, Senior NLP Researcher at Tencent UK and DPhil from University of Oxford. Specialized in Long-Horizon and Self-Improving AI Agents.">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Academicons for Scholar/Arxiv -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    
+    <!-- Inter Font Only -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f7ff',
+                            100: '#e0effe',
+                            600: '#004aad',
+                            700: '#00388a',
+                            900: '#002157',
+                        }
+                    }
+                }
+            }
+        }
+
+        // Anti-scraping Email Handler
+        function sendEmail() {
+            var user = "bohan.tang.job";
+            var domain = "gmail.com";
+            window.location.href = "mailto:" + user + "@" + domain;
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased leading-relaxed">
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200/80">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold text-slate-900 tracking-tight">Bohan Tang</a>
+            <nav class="hidden md:flex space-x-6 text-sm font-medium text-slate-600">
+                <a href="#about" class="hover:text-brand-600 transition">About</a>
+                <a href="#research" class="hover:text-brand-600 transition">Research</a>
+                <a href="#news" class="hover:text-brand-600 transition">News</a>
+                <a href="#publications" class="hover:text-brand-600 transition">Publications</a>
+                <a href="#experience" class="hover:text-brand-600 transition">Experience</a>
+                <a href="#service" class="hover:text-brand-600 transition">Service</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-10">
+
+        <!-- PROFILE / ABOUT SECTION -->
+        <section id="about" class="bg-white p-6 sm:p-8 rounded-2xl shadow-sm border border-slate-200/60">
+            <div class="flex flex-col md:flex-row gap-8 items-start">
+                <!-- Avatar Photo -->
+                <div class="flex-shrink-0 mx-auto md:mx-0">
+                    <div class="w-40 h-40 sm:w-48 sm:h-48 rounded-2xl bg-slate-100 border border-slate-200 overflow-hidden shadow-inner">
+                        <img src="avatar.jpg" alt="Bohan Tang" class="w-full h-full object-cover object-center" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'w-full h-full flex items-center justify-center text-slate-400\'><i class=\'fa-solid fa-user-graduate text-6xl text-slate-300\'></i></div>';">
+                    </div>
+                </div>
+
+                <!-- Bio Info -->
+                <div class="flex-grow space-y-4">
+                    <div>
+                        <h1 class="text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight">Bohan Tang, DPhil (PhD) </h1>
+                        <p class="text-lg text-slate-700 font-medium mt-1">Senior NLP Researcher @ Tencent UK</p>
+                        <p class="text-sm text-slate-500">DPhil in Engineering Science, University of Oxford</p>
+                    </div>
+
+                    <p class="text-slate-700 text-sm sm:text-base leading-relaxed">
+                        I am a Senior NLP Researcher at Tencent UK. I earned my DPhil (PhD) in Engineering Science from the University of Oxford (Machine Learning Research Group), supervised by <a href="https://web.media.mit.edu/~xdong" class="text-brand-600 hover:underline font-medium" target="_blank">Prof. Xiaowen Dong</a>, with long-term research co-advising from <a href="https://scholar.google.com/citations?user=W_Q33RMAAAAJ&hl=en" class="text-brand-600 hover:underline font-medium" target="_blank">Prof. Siheng Chen</a>. Prior to Oxford, I completed my Bachelor's degree at Shanghai Jiao Tong University, co-advised by <a href="https://scholar.google.com/citations?user=W_Q33RMAAAAJ&hl=en" class="text-brand-600 hover:underline font-medium" target="_blank">Prof. Siheng Chen</a> and <a href="https://scholar.google.com/citations?user=pbjw9sMAAAAJ&hl=en" class="text-brand-600 hover:underline font-medium" target="_blank">Prof. Ya Zhang</a>.
+                    </p>
+
+                    <!-- Links with Anti-Scraping Email -->
+                    <div class="pt-2 flex flex-wrap gap-2 text-sm">
+                        <button onclick="sendEmail()" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 transition font-medium">
+                            <i class="fa-solid fa-envelope text-brand-600"></i> bohan.tang.job [at] gmail [dot] com
+                        </button>
+                        <a href="https://scholar.google.com/citations?user=dpcw8ckAAAAJ&hl=en" target="_blank" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 transition font-medium">
+                            <i class="ai ai-google-scholar text-brand-600 text-base"></i> Google Scholar
+                        </a>
+                        <a href="https://github.com/tbh-98" target="_blank" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 transition font-medium">
+                            <i class="fa-brands fa-github text-slate-800"></i> GitHub
+                        </a>
+                        <a href="https://www.linkedin.com/in/bohan-tang" target="_blank" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 transition font-medium">
+                            <i class="fa-brands fa-linkedin text-blue-600"></i> LinkedIn
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mentorship & Collaboration Note -->
+            <div class="mt-6 p-4 rounded-xl bg-slate-50 border border-slate-200/80 flex items-start gap-3.5">
+                <div class="p-2 bg-slate-200 text-slate-700 rounded-lg flex-shrink-0 mt-0.5">
+                    <i class="fa-solid fa-bullhorn text-sm"></i>
+                </div>
+                <div class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                    <span class="font-semibold text-slate-900">Mentorship & Collaboration:</span> I am always excited to work with self-motivated students (PhD / Master) and researchers on long-horizon and self-improving agents (spanning post-training & RL, agent harnesses, lifelong memory, world models, and high-stakes decision-making). If you are interested in joint projects or academic collaboration aiming for top-tier publications, feel free to reach out via email.
+                </div>
+            </div>
+        </section>
+
+        <!-- RESEARCH VISION & AGENDA -->
+        <section id="research" class="bg-white p-6 sm:p-8 rounded-2xl shadow-sm border border-slate-200/60 space-y-6">
+            <div class="space-y-3">
+                <h2 class="text-xl sm:text-2xl font-bold text-slate-900 border-b border-slate-100 pb-2">Research Agenda & Vision</h2>
+                <div class="p-4 rounded-xl bg-slate-50 border-l-4 border-slate-700 text-slate-800 italic text-sm sm:text-base leading-relaxed">
+                    "I am an AI researcher working on long-horizon and self-improving agents — building systems that can learn from experience, adapt over time, and tackle increasingly complex tasks."
+                </div>
+            </div>
+
+            <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
+                My research spans both model learning and agent system design, including post-training, reinforcement learning, agent harnesses, memory, tool use, and evaluation. I am particularly interested in how improvements at the model and system levels can work together to enable more capable and reliable agents.
+            </p>
+            <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
+                Beyond general agent research, I am interested in applying these systems to real-world forecasting and decision-making, especially in settings where agents must reason over complex, evolving information and support high-stakes decisions.
+            </p>
+            
+            <div class="grid md:grid-cols-3 gap-5 pt-2">
+                <!-- Pillar 1 -->
+                <div class="p-5 rounded-xl bg-slate-50 border border-slate-100 space-y-3 flex flex-col justify-between">
+                    <div class="space-y-2">
+                        <div class="text-slate-800 text-xl font-bold"><i class="fa-solid fa-brain"></i></div>
+                        <h3 class="font-semibold text-slate-900 text-base">1. Model Learning & Post-Training</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Developing post-training paradigms, RL objectives, and action semantics that prevent compounding errors and support trajectory-level self-improvement.
+                        </p>
+                    </div>
+                    <div>
+                        <span class="inline-block text-[10px] font-medium text-slate-700 bg-slate-200 px-2 py-0.5 rounded">Post-Training • RL • Action Semantics</span>
+                    </div>
+                </div>
+
+                <!-- Pillar 2 -->
+                <div class="p-5 rounded-xl bg-slate-50 border border-slate-100 space-y-3 flex flex-col justify-between">
+                    <div class="space-y-2">
+                        <div class="text-slate-800 text-xl font-bold"><i class="fa-solid fa-cubes"></i></div>
+                        <h3 class="font-semibold text-slate-900 text-base">2. Agent System Design & Harnesses</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Architecting lifelong memory synthesis, generative GUI world models, tool use, agent harnesses, and controllable evaluation frameworks.
+                        </p>
+                    </div>
+                    <div>
+                        <span class="inline-block text-[10px] font-medium text-slate-700 bg-slate-200 px-2 py-0.5 rounded">Memory • World Models • Harness</span>
+                    </div>
+                </div>
+
+                <!-- Pillar 3 -->
+                <div class="p-5 rounded-xl bg-slate-50 border border-slate-100 space-y-3 flex flex-col justify-between">
+                    <div class="space-y-2">
+                        <div class="text-slate-800 text-xl font-bold"><i class="fa-solid fa-chart-line"></i></div>
+                        <h3 class="font-semibold text-slate-900 text-base">3. Forecasting & High-Stakes Decisions</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Applying long-horizon agents to settings where systems must reason over complex, evolving information and support high-stakes decision-making.
+                        </p>
+                    </div>
+                    <div>
+                        <span class="inline-block text-[10px] font-medium text-slate-700 bg-slate-200 px-2 py-0.5 rounded">Forecasting • Evolving Info • High-Stakes</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RECENT NEWS (Strict Reverse-Chronological Order) -->
+        <section id="news" class="bg-white p-6 sm:p-8 rounded-2xl shadow-sm border border-slate-200/60">
+            <h2 class="text-xl sm:text-2xl font-bold text-slate-900 mb-4 border-b border-slate-100 pb-2">Recent Updates</h2>
+            <ul class="space-y-3.5 text-sm sm:text-base">
+                <li class="flex items-start gap-3">
+                    <span class="bg-slate-800 text-white text-xs font-medium px-2.5 py-0.5 rounded-full mt-0.5 flex-shrink-0">Oct 2026</span>
+                    <span class="text-slate-700"><strong>MemoryForge</strong> accepted to <strong>EMNLP 2026</strong>! Introduces lifelong memory synthesis for human-like LLM agents.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <span class="bg-slate-100 text-slate-800 text-xs font-medium px-2.5 py-0.5 rounded-full mt-0.5 flex-shrink-0">Jun 2026</span>
+                    <span class="text-slate-700">Paper on <strong>Action Semantics Learning</strong> accepted to <strong>CVPR 2026 Findings</strong>.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <span class="bg-slate-100 text-slate-800 text-xs font-medium px-2.5 py-0.5 rounded-full mt-0.5 flex-shrink-0">May 2026</span>
+                    <span class="text-slate-700">Honored with the <strong>ICML 2026 Gold Reviewer Award</strong>.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <span class="bg-slate-100 text-slate-800 text-xs font-medium px-2.5 py-0.5 rounded-full mt-0.5 flex-shrink-0">Apr 2026</span>
+                    <span class="text-slate-700">Paper <strong>ViMo</strong> presented at <strong>ICLR 2026</strong> as a generative visual GUI world model for app agents.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <span class="bg-slate-100 text-slate-800 text-xs font-medium px-2.5 py-0.5 rounded-full mt-0.5 flex-shrink-0">Feb 2026</span>
+                    <span class="text-slate-700">DPhil degree in Engineering Science officially conferred at the <strong>University of Oxford</strong> following minor thesis corrections.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <span class="bg-slate-100 text-slate-800 text-xs font-medium px-2.5 py-0.5 rounded-full mt-0.5 flex-shrink-0">Dec 2025</span>
+                    <span class="text-slate-700">Joined <strong>Tencent UK (London)</strong> as a <strong>Senior NLP Researcher</strong>, leading research on language-conditioned interactive AI agents.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <span class="bg-slate-100 text-slate-800 text-xs font-medium px-2.5 py-0.5 rounded-full mt-0.5 flex-shrink-0">Nov 2025</span>
+                    <span class="text-slate-700">Passed DPhil Viva examination at the <strong>University of Oxford</strong> with minor thesis corrections.</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- SELECTED PUBLICATIONS SECTION -->
+        <section id="publications" class="bg-white p-6 sm:p-8 rounded-2xl shadow-sm border border-slate-200/60 space-y-6">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-100 pb-3">
+                <div>
+                    <h2 class="text-xl sm:text-2xl font-bold text-slate-900">Selected Publications</h2>
+                    <p class="text-xs text-slate-500 mt-1">* Equal contribution / Co-first author. Complete list of 19+ papers available on <a href="https://scholar.google.com/citations?user=dpcw8ckAAAAJ&hl=en" target="_blank" class="text-brand-600 underline font-medium">Google Scholar</a>.</p>
+                </div>
+                <a href="https://scholar.google.com/citations?user=dpcw8ckAAAAJ&hl=en" target="_blank" class="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-semibold transition flex-shrink-0 border border-slate-200">
+                    <i class="ai ai-google-scholar text-sm"></i> Google Scholar
+                </a>
+            </div>
+
+            <!-- Selected Papers List -->
+            <div class="space-y-4 text-sm">
+
+                <!-- Paper 1 -->
+                <div class="p-4 rounded-xl border border-slate-100 hover:border-slate-300 transition bg-white space-y-1.5">
+                    <div class="flex items-start justify-between gap-2">
+                        <div class="text-base font-semibold text-slate-900">MemoryForge: Synthesize Lifelong Memory for Human-Like LLM Agents</div>
+                        <span class="px-2 py-0.5 rounded text-[10px] font-semibold bg-slate-100 text-slate-700 uppercase flex-shrink-0">EMNLP 2026</span>
+                    </div>
+                    <div class="text-slate-600"><strong>Bohan Tang</strong>, Y. Guo</div>
+                    <div class="text-xs font-medium text-slate-600">The 2026 Conference on Empirical Methods in Natural Language Processing</div>
+                    <div class="pt-1 flex gap-2">
+                        <a href="https://arxiv.org/pdf/2608.00007" target="_blank" class="px-2.5 py-1 rounded text-xs bg-slate-100 hover:bg-slate-200 text-slate-700 transition"><i class="ai ai-arxiv"></i> Paper</a>
+                    </div>
+                </div>
+
+                <!-- Paper 2 -->
+                <div class="p-4 rounded-xl border border-slate-100 hover:border-slate-300 transition bg-white space-y-1.5">
+                    <div class="flex items-start justify-between gap-2">
+                        <div class="text-base font-semibold text-slate-900">ViMo: A Generative Visual GUI World Model for App Agents</div>
+                        <span class="px-2 py-0.5 rounded text-[10px] font-semibold bg-slate-100 text-slate-700 uppercase flex-shrink-0">ICLR 2026</span>
+                    </div>
+                    <div class="text-slate-600">D. Luo*, <strong>Bohan Tang*</strong>, K. Li, G. Papoudakis, J. Song, S. Gong, J. Hao, J. Wang, K. Shao</div>
+                    <div class="text-xs font-medium text-slate-600">International Conference on Learning Representations</div>
+                    <div class="pt-1 flex gap-2">
+                        <a href="https://openreview.net/forum?id=mWoMyDEfbM" target="_blank" class="px-2.5 py-1 rounded text-xs bg-slate-100 hover:bg-slate-200 text-slate-700 transition"><i class="fa-solid fa-file-pdf"></i> OpenReview</a>
+                    </div>
+                </div>
+
+                <!-- Paper 3 -->
+                <div class="p-4 rounded-xl border border-slate-100 hover:border-slate-300 transition bg-white space-y-1.5">
+                    <div class="flex items-start justify-between gap-2">
+                        <div class="text-base font-semibold text-slate-900">Beyond Syntax: Action Semantics Learning for App Agents</div>
+                        <span class="px-2 py-0.5 rounded text-[10px] font-semibold bg-slate-100 text-slate-700 uppercase flex-shrink-0">CVPR 2026</span>
+                    </div>
+                    <div class="text-slate-600"><strong>Bohan Tang*</strong>, D. Luo*, J. Liu, J. Chen, S. Gong, J. Hao, J. Wang, K. Shao</div>
+                    <div class="text-xs font-medium text-slate-600">IEEE/CVF Conference on Computer Vision and Pattern Recognition Findings</div>
+                    <div class="pt-1 flex gap-2">
+                        <a href="https://openaccess.thecvf.com" target="_blank" class="px-2.5 py-1 rounded text-xs bg-slate-100 hover:bg-slate-200 text-slate-700 transition"><i class="fa-solid fa-file-pdf"></i> Paper</a>
+                    </div>
+                </div>
+
+                <!-- Paper 4 -->
+                <div class="p-4 rounded-xl border border-slate-100 hover:border-slate-300 transition bg-white space-y-1.5">
+                    <div class="flex items-start justify-between gap-2">
+                        <div class="text-base font-semibold text-slate-900">Synthesizing Post-Training Data for LLMs through Multi-Agent Simulation</div>
+                        <span class="px-2 py-0.5 rounded text-[10px] font-semibold bg-slate-100 text-slate-700 uppercase flex-shrink-0">ACL 2025</span>
+                    </div>
+                    <div class="text-slate-600">S. Tang*, X. Pang*, Z. Liu*, <strong>Bohan Tang*</strong>, R. Ye, T. Jin, X. Dong, Y. Wang, S. Chen</div>
+                    <div class="text-xs font-medium text-slate-600">Annual Meeting of the Association for Computational Linguistics (Main Track)</div>
+                    <div class="pt-1 flex gap-2">
+                        <a href="https://aclanthology.org/2025.acl-long.1136" target="_blank" class="px-2.5 py-1 rounded text-xs bg-slate-100 hover:bg-slate-200 text-slate-700 transition"><i class="fa-solid fa-file-pdf"></i> ACL Anthology</a>
+                    </div>
+                </div>
+
+                <!-- Paper 5 -->
+                <div class="p-4 rounded-xl border border-slate-100 hover:border-slate-300 transition bg-white space-y-1.5">
+                    <div class="flex items-start justify-between gap-2">
+                        <div class="text-base font-semibold text-slate-900">Training-Free Message Passing for Learning on Hypergraphs</div>
+                        <span class="px-2 py-0.5 rounded text-[10px] font-semibold bg-slate-100 text-slate-700 uppercase flex-shrink-0">ICLR 2025</span>
+                    </div>
+                    <div class="text-slate-600"><strong>Bohan Tang</strong>, Z. Liu*, K. Jiang*, S. Chen, X. Dong</div>
+                    <div class="text-xs font-medium text-slate-600">International Conference on Learning Representations</div>
+                    <div class="pt-1 flex gap-2">
+                        <a href="https://proceedings.iclr.cc/paper_files/paper/2025/hash/ad9804eed175610302917a0c21ab9b52-Abstract-Conference.html" target="_blank" class="px-2.5 py-1 rounded text-xs bg-slate-100 hover:bg-slate-200 text-slate-700 transition"><i class="fa-solid fa-file-pdf"></i> Paper</a>
+                    </div>
+                </div>
+
+                <!-- Paper 6 -->
+                <div class="p-4 rounded-xl border border-slate-100 hover:border-slate-300 transition bg-white space-y-1.5">
+                    <div class="flex items-start justify-between gap-2">
+                        <div class="text-base font-semibold text-slate-900">Collaborative Uncertainty Benefits Multi-Agent Multi-Modal Trajectory Forecasting</div>
+                        <span class="px-2 py-0.5 rounded text-[10px] font-semibold bg-slate-100 text-slate-700 uppercase flex-shrink-0">IEEE TPAMI</span>
+                    </div>
+                    <div class="text-slate-600"><strong>Bohan Tang*</strong>, Y. Zhong*, C. Xu, W.-T. Wu, U. Neumann, Y. Wang, Y. Zhang, S. Chen</div>
+                    <div class="text-xs font-medium text-slate-600">IEEE Transactions on Pattern Analysis and Machine Intelligence (2023) / NeurIPS 2021</div>
+                    <div class="pt-1 flex gap-2">
+                        <a href="https://www.computer.org/csdl/journal/tp/2023/11/10173747/1Ox43eLoG4M" target="_blank" class="px-2.5 py-1 rounded text-xs bg-slate-100 hover:bg-slate-200 text-slate-700 transition"><i class="fa-solid fa-file-pdf"></i> IEEE TPAMI</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- EXPERIENCE & EDUCATION -->
+        <section id="experience" class="bg-white p-6 sm:p-8 rounded-2xl shadow-sm border border-slate-200/60 space-y-6">
+            <h2 class="text-xl sm:text-2xl font-bold text-slate-900 border-b border-slate-100 pb-2">Experience & Education</h2>
+
+            <div class="space-y-6">
+                <!-- Tencent -->
+                <div class="flex gap-4 items-start">
+                    <div class="w-10 h-10 rounded-lg bg-slate-100 text-slate-700 flex items-center justify-center font-bold text-lg flex-shrink-0">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <div class="flex-grow">
+                        <div class="flex flex-wrap items-center justify-between gap-2">
+                            <h3 class="text-base sm:text-lg font-semibold text-slate-900">Senior NLP Researcher — Tencent UK</h3>
+                            <span class="text-xs text-slate-500">Dec 2025 – Present | London, UK</span>
+                        </div>
+                        <p class="text-sm text-slate-600 mt-1">
+                            Leading research on self-evolving AI agents for long-horizon tasks. Mentoring research interns on RSI agent systems, post-training, and AI4AI.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Oxford -->
+                <div class="flex gap-4 items-start">
+                    <div class="w-10 h-10 rounded-lg bg-slate-100 text-slate-700 flex items-center justify-center font-bold text-lg flex-shrink-0">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <div class="flex-grow">
+                        <div class="flex flex-wrap items-center justify-between gap-2">
+                            <h3 class="text-base sm:text-lg font-semibold text-slate-900">DPhil in Engineering Science — University of Oxford</h3>
+                            <span class="text-xs text-slate-500">Oct 2021 – Feb 2026 | Oxford, UK</span>
+                        </div>
+                        <p class="text-sm text-slate-600 mt-1">
+                            Machine Learning Research Group. Supervised by <a href="https://web.media.mit.edu/~xdong" target="_blank" class="text-brand-600 hover:underline">Prof. Xiaowen Dong</a>, with research co-advising from <a href="https://scholar.google.com/citations?user=W_Q33RMAAAAJ&hl=en" target="_blank" class="text-brand-600 hover:underline">Prof. Siheng Chen</a>. Funded by Departmental Research Studentship, Department of Engineering Science, University of Oxford.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- SJTU -->
+                <div class="flex gap-4 items-start">
+                    <div class="w-10 h-10 rounded-lg bg-slate-100 text-slate-700 flex items-center justify-center font-bold text-lg flex-shrink-0">
+                        <i class="fa-solid fa-university"></i>
+                    </div>
+                    <div class="flex-grow">
+                        <div class="flex flex-wrap items-center justify-between gap-2">
+                            <h3 class="text-base sm:text-lg font-semibold text-slate-900">BSc in Information Engineering — Shanghai Jiao Tong University</h3>
+                            <span class="text-xs text-slate-500">Sep 2017 – Jun 2021 | Shanghai, China</span>
+                        </div>
+                        <p class="text-sm text-slate-600 mt-1">
+                            Graduated as University Outstanding Graduate. Co-advised by <a href="https://scholar.google.com/citations?user=W_Q33RMAAAAJ&hl=en" target="_blank" class="text-brand-600 hover:underline">Prof. Siheng Chen</a> and <a href="https://scholar.google.com/citations?user=pbjw9sMAAAAJ&hl=en" target="_blank" class="text-brand-600 hover:underline">Prof. Ya Zhang</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ACADEMIC SERVICE & AWARDS -->
+        <section id="service" class="bg-white p-6 sm:p-8 rounded-2xl shadow-sm border border-slate-200/60 space-y-6">
+            <h2 class="text-xl sm:text-2xl font-bold text-slate-900 border-b border-slate-100 pb-2">Honors & Academic Service</h2>
+
+            <div class="grid md:grid-cols-2 gap-6 text-sm">
+                <div class="space-y-2">
+                    <h3 class="font-semibold text-slate-900 flex items-center gap-2 text-base">
+                        <i class="fa-solid fa-award text-slate-700"></i> Honors & Awards
+                    </h3>
+                    <ul class="space-y-1.5 text-slate-600 list-disc list-inside">
+                        <li>ICML Gold Reviewer Award (2026)</li>
+                        <li>National Award for Outstanding Overseas Students (2024)</li>
+                        <li>NeurIPS Top Reviewer Award (2024)</li>
+                        <li>Departmental Research Studentship, University of Oxford (2021–2025)</li>
+                        <li>SJTU Outstanding Graduate (2021)</li>
+                    </ul>
+                </div>
+
+                <div class="space-y-2">
+                    <h3 class="font-semibold text-slate-900 flex items-center gap-2 text-base">
+                        <i class="fa-solid fa-users text-slate-700"></i> Academic Service
+                    </h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        <strong>Area Chair:</strong> ICML GFM Workshop (2026), NeurIPS SEA Workshop (2025).<br>
+                        <strong>Journal Reviewer:</strong> IEEE-TPAMI, IEEE-TNNLS, IEEE-TSIPN, TMLR.<br>
+                        <strong>Conference Reviewer:</strong> NeurIPS, ICLR, ICML, CVPR, AAAI, AISTATS, ICASSP.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-200 bg-white py-8 text-center text-xs text-slate-500">
+        <div class="max-w-5xl mx-auto px-4">
+            <p>© 2026 Bohan Tang. Hosted on GitHub Pages.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
